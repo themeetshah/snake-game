@@ -28,7 +28,7 @@ A simple Snake Game built using Java Swing.
 
 ## 📁 Project Structure
 ```
-/SnakeGame
+SnakeGame
  ├── SnakeGame.java   # Main game logic
  ├── README.md        # Project documentation
 ```
