@@ -107,8 +107,11 @@ public class SnakeGame extends JPanel implements ActionListener {
         FontMetrics metrics = getFontMetrics(g.getFont());
         g.drawString("Game Over", (SCREEN_WIDTH - metrics.stringWidth("Game Over")) / 2, SCREEN_HEIGHT / 2);
         g.setFont(new Font("Arial", Font.PLAIN, 30));
-        g.drawString("Score: " + bodyParts, (SCREEN_WIDTH - metrics.stringWidth("Score: " + bodyParts) + TILE_SIZE) / 2,
+        g.drawString("Score: " + (bodyParts - 5),
+                (SCREEN_WIDTH - metrics.stringWidth("Score: " + (bodyParts - 5)) + TILE_SIZE) / 2,
                 (SCREEN_HEIGHT / 2) + (2 * TILE_SIZE));
+
+        System.out.println("Game Over! Your score: " + (bodyParts - 5));
     }
 
     @Override
